@@ -45,8 +45,8 @@ class TileSystem:
     	longitude = 360 * x
 
     def pixelXYToTileXY(pixelX, pixelY, tileX, tileY) :
-    	tileX = pixelX / 256
-    	tileY = pixelY / 256
+    	tileX = round(pixelX / 256)
+    	tileY = round(pixelY / 256)
 
     def tileXYToPixelXY(tileX, tileY, pixelX, pixelY) :
     	pixelX = tileX * 256
