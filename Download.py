@@ -19,6 +19,7 @@ class Download:
 	def getUrlResponse(self, quadKey) :
 		self.setQuadKey(quadKey)
 		url = self.getUrl()
+		print(quadKey)
 		# urllib.request.urlretrieve(url, './temp/%s.jpg' % ''.join(self.quadKey))
 		with urllib.request.urlopen(url) as repsonse:
 			re = repsonse.read()
@@ -28,8 +29,8 @@ class Download:
 		else :
 			return None
 
-	def getUrlImage(self.quadKey) :
-		self.setQuadkey(quadKey)
+	def getUrlImage(self, quadKey) :
+		self.setQuadKey(quadKey)
 		url = self.getUrl()
-		return urllib.request.urlretrieve(url, './temp/%s.jpg' % ''.join(self.quadKey))
+		urllib.request.urlretrieve(url, './temp/%s.jpg' % ''.join(self.quadKey))
 
