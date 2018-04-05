@@ -30,8 +30,8 @@ class Search:
     def search1Level(self, levelOfDetail) :
         tX1, tY1 = self.getTileXY(self.MinLatitude, self.MinLongitude, levelOfDetail)
         tX2, tY2 = self.getTileXY(self.MaxLatitude, self.MaxLongitude, levelOfDetail)
-        print((tX1, tY1))
-        print((tX2, tY2))
+        print('\tStart tileXY (%d, %d)' % (tX1, tY1))
+        print('\tStart tileXY (%d, %d)' % (tX2, tY2))
         re = list()
 
         for i in range(tY1, tY2 + 1) :

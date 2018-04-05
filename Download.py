@@ -1,4 +1,5 @@
 import urllib.request
+import os
 
 class Download:
 	def __init__(self) :
@@ -19,7 +20,7 @@ class Download:
 	def getUrlResponse(self, quadKey) :
 		self.setQuadKey(quadKey)
 		url = self.getUrl()
-		print(quadKey)
+		print('\tGetting picture by quadKey %s' % quadKey)
 		# urllib.request.urlretrieve(url, './temp/%s.jpg' % ''.join(self.quadKey))
 		with urllib.request.urlopen(url) as repsonse:
 			re = repsonse.read()
@@ -32,5 +33,6 @@ class Download:
 	def getUrlImage(self, quadKey) :
 		self.setQuadKey(quadKey)
 		url = self.getUrl()
+		
 		urllib.request.urlretrieve(url, './temp/%s.jpg' % ''.join(self.quadKey))
 

@@ -12,8 +12,8 @@ class Imerge:
 		self.pY1 = pY1
 		self.pY2 = pY2
 		self.dir = './temp/%s.jpg'
-		print(pX2 - pX1)
-		print(pY2 - pY1)
+		# print(pX2 - pX1)
+		# print(pY2 - pY1)
 		self.img = self.blankIm()
 	
 	def blankIm(self) :
@@ -58,7 +58,7 @@ class Imerge:
 
 		self.img[yst:yed, xst:xed, :] = timg[tyst:tyed, txst:txed, :]
 
-	def saveFig(self, fname = 'Result,jpg') :
-		return cv2.imwrite(fname, self.img)
+	def saveFig(self, fname = 'Result.jpg') :
+		return cv2.imwrite('%s.jpg' % fname, self.img)
 
 
