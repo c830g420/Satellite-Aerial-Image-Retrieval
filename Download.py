@@ -20,13 +20,13 @@ class Download:
 	def getUrlResponse(self, quadKey) :
 		self.setQuadKey(quadKey)
 		url = self.getUrl()
-		print('\tGetting picture by quadKey %s' % quadKey)
+		print('\tGetting image by quadKey %s' % quadKey)
 		# urllib.request.urlretrieve(url, './temp/%s.jpg' % ''.join(self.quadKey))
 		with urllib.request.urlopen(url) as repsonse:
 			re = repsonse.read()
 
 		if len(re) > 1033:
-			return self.quadKey
+			return quadKey
 		else :
 			return None
 
