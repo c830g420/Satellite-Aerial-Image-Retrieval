@@ -2,7 +2,7 @@
 
 A program using Bing maps tile system to automatically download aerial imagery (maximum resolution available) given a lat/lon bounding box.
 
-##Group Members Ziyu Liu (zliu102), Chen Gong (cgong2), Jing Chen
+##Group Members * * *
 
 ##Algorithm
 Convert the Bing Tile System. Reference: https://msdn.microsoft.com/en-us/library/bb259689.aspx#Anchor_0
