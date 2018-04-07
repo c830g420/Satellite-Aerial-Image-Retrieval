@@ -3,7 +3,7 @@ import os
 
 class Download:
 	def __init__(self) :
-		self.bingMapsKey = 'PcyWU9OvD5ekcciniRcl~9OChkYYOEagqQbR4FM-6wQ~Ai9r98N1UgCFvW_8mhZ8mWGudmj4Lhd0sClEQnreqQrIuOVokAIDt8Rc7oGgC57o'
+		self.bingMapsKey = '41W7SFbE1T0EL5ZXwqs3~1Qz6gK41TViufkWWMdrxbg~Au2gvdXSyRpNSFsqjlnA5hVuP-2kaFHPdz3pUKMZasjOWt89LqbSAyUCSjx8qsJm'
 		self.urlBase = 'http://h0.ortho.tiles.virtualearth.net/tiles/h%s.jpeg?g=131&key=%s'
 		self.quadKey = list()
 
